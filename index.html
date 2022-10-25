@@ -1,25 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
-  </head>
-  <body class="grid-container">
-    <header>
-      <img src="./img/logo.svg" alt="logo" />
-      <nav>
-        <ul class="menu">
-          <li>Menu</li>
-          <li>Menu</li>
-          <li>Menu</li>
-          <li>Menu</li>
-        </ul>
-      </nav>
-    </header>
-    <main>main</main>
-    <footer>footer</footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+
+      <div id="nav-logo">
+        <a href="#">
+          <img src="./img/svg-1.svg" alt="logo" class="nav-logo-img" />
+        </a>
+      </div>
+
+      <div id="nav-search">
+        <input type="text" name="" id="">
+        <button type="button">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+
+      <ul id="nav-menu" class="d-none">
+        <li class="nav-menu-item">
+          <a href="#">Menu</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#">Menu</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#">Menu</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="#">Menu</a>
+        </li>
+      </ul>
+
+      <div id="nav-button" class="nav-button">
+        <a href="javascript:void(0);" onclick="showMenu()">
+          <i class="bi bi-list"></i>
+        </a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>main</main>
+
+  <footer>footer</footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
