@@ -13,7 +13,6 @@ body {
   color: white;
 }
 
-/* MOBILE FIRST */
 
 #nav-logo {
   grid-area: logo;
@@ -31,6 +30,8 @@ body {
   grid-area: button;
 }
 
+/* MOBILE FIRST */
+
 nav {
   display: grid;
   grid-template-columns: 1fr 2fr 0.5fr;
@@ -41,8 +42,44 @@ nav {
 }
 
 .nav-logo-img {
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 8rem;
+}
+
+#nav-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-search {
+  height: 2.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+.input-search:focus{
+  border: 2px solid red;
+}
+
+.button {
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: black;
 }
 
 .nav-menu {
@@ -52,16 +89,10 @@ nav {
   align-items: center;
 }
 
-.nav-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .nav-menu-item {
-  height: 2rem;
-  width: 4rem;
-  margin: 0 1px;
+  height: 100%;
+  width: 100%;
+  margin: 2px;
 }
 
 .nav-menu-item>a {
@@ -76,6 +107,28 @@ nav {
 
 .nav-menu-item>a:hover {
   background-color: red;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button>a {
+  color: white;
+}
+
+.nav-button>a:hover {
+  background-color: red;
+  color: black;
+}
+
+.nav-button>a>i {
+  font-size: 2rem;
+  padding: 20px;
 }
 
 .d-none {
