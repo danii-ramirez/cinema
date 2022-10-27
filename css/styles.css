@@ -60,7 +60,7 @@ nav {
   border-radius: 4px;
 }
 
-.input-search:focus{
+.input-search:focus {
   border: 2px solid red;
 }
 
@@ -117,18 +117,21 @@ nav {
   align-items: center;
 }
 
-.nav-button>a {
+.nav-button>button {
+  padding: 2px;
+  font-size: 35px;
   color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.nav-button>a:hover {
+.nav-button>button:hover {
   background-color: red;
   color: black;
-}
-
-.nav-button>a>i {
-  font-size: 2rem;
-  padding: 20px;
 }
 
 .d-none {
